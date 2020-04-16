@@ -93,17 +93,17 @@ function itemAdded(e) {
 }
 
 function itemLists(title, artist, type, id, time, year) {
-    let itemRow = document.createElement('div')
-    itemRow.classList.add('item')
-    itemRow.classList.add('option')
-    itemRow.id = id
-    itemRow.innerHTML = `${title}<br>${artist}<span>${time}</span>`
-    itemRow.addEventListener('click', itemAdded)
-    items.appendChild(itemRow)
+    let itemRow = document.createElement('div');
+    itemRow.classList.add('item');
+    itemRow.classList.add('option');
+    itemRow.id = id;
+    itemRow.innerHTML = `${title}<br>${artist}<span>${time}</span>`;
+    itemRow.addEventListener('click', itemAdded);
+    items.appendChild(itemRow);
     for (let i = 0; i < playList.length; i++) {
         if (playList[i] == id) {
-            itemRow.classList.remove('option')
-            itemRow.removeEventListener('click', itemAdded)
+            itemRow.classList.remove('option');
+            itemRow.removeEventListener('click', itemAdded);
         }
     }
 }
