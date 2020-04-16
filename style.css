@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 10px;
+    background: rgb(39, 39, 39);
+    color: white;
+    font-family: verdana;
+    font-size: 12px;
+}
+
+iframe {
+    border: 1px solid Gray;
+}
+
+.buttons {
+    position: static;
+    display: inline-flex;
+    padding-bottom: 5px;
+}
+
+.btn {
+    display: inline-flex;
+    background: DodgerBlue;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: Gray;
+}
+
+.item {
+    padding: 10px 5px;
+    border-bottom: 1px solid Gray;
+    background: #999;
+}
+
+.item:hover {
+    background: Gray;
+}
+
+.option {
+    background: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+.item > span {
+    float: right;
+}
